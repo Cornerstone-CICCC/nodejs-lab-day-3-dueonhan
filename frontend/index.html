@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdn.socket.io/4.8.1/socket.io.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Besties Chat</h1>
+    <form id="chat-form">
+      <input type="text" id="username" placeholder="Enter username" />
+      <input type="text" id="message" placeholder="Enter text..." />
+      <button id="send">Send</button>
+    </form>
+    <button id="load">Load previous chats</button>
+    <section style="display: flex; gap: 2rem">
+      <ul id="messages" style="flex: 1">
+        <!-- CHAT MESSAGES GO HERE -->
+      </ul>
+
+      <ul id="users" style="flex: 0 1 150px; background-color: #eee">
+        <!-- USERS GO HERE -->
+      </ul>
+    </section>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
